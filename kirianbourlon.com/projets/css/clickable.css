@@ -1,0 +1,19 @@
+.styled-list {
+    list-style-type: disc; /* Utilisation de puces */
+    padding-left: 20px;    /* Indentation pour aligner les puces */
+  }
+  
+  .styled-list li {
+    margin-bottom: 10px; /* Espacement entre chaque projet */
+  }
+  
+  .styled-list a {
+    color: #1a73e8; /* Couleur bleu pour les liens */
+    text-decoration: underline; /* Soulignement pour un effet de lien classique */
+    font-size: 16px; /* Taille de police confortable */
+  }
+  
+  .styled-list a:hover {
+    text-decoration: none; /* Retire le soulignement au survol */
+  }
+  
