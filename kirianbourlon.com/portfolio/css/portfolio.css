@@ -143,6 +143,21 @@ h6 {
   }
 }
 
+.nav-menu .dropdown ul {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.nav-menu .dropdown:hover ul {
+  display: block;
+}
+
+.nav-menu .dropdown > a {
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/

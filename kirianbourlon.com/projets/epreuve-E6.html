@@ -107,23 +107,29 @@
       </div>
     </div>
 
-    <nav id="navbar" class="nav-menu navbar">
+    <!-- nav-menu -->
+    <nav style="font-size: small" id="navbar" class="nav-menu navbar">
       <ul>
-        <li><a href="../../index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-        <li><a href="../../index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Profil</span></a></li>
-        <li><a href="../../index.html#resume" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Parcours</span></a></li>
-        <li><a href="../../index.html#stages" class="nav-link scrollto"><i class='bx bxs-briefcase'></i> <span>Expérience professionnel</span></a></li>
-        <li><a href="../../index.html#projets" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Projets</span></a></li>
-        <li><a href="../../index.html#portfolio" class="nav-link scrollto"><i class="bx bxs-school"></i> <span>BTS SIO</span></a></li>
-        <li class="bts-sio">
-          <a href="../../index.html#epreuve" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Épreuves</span></a>
-          <ul class="sub-menu">
-            <li style="margin-left:33px"><a href="epreuve-E4.html" class="e1-link">Épreuve E4</a></li>
-            <li style="margin-left:33px"><a href="epreuve-E5.html" class="e2-link">Épreuve E5</a></li>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Profil</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Parcours</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bxs-school"></i> <span>BTS SIO</span></a></li>
+        <li><a href="#alternances" class="nav-link scrollto"><i class='bx bxs-briefcase'></i> <span>Expérience</span></a></li>
+        <li><a href="#projets" class="nav-link scrollto"><i class='bx bx-code-alt'></i> <span>Réalisation</span></a></li>
+        
+        <!-- Épreuve avec sous-menu -->
+        <li class="dropdown">
+          <a href="#"><i class="bx bxs-school"></i> <span>Épreuve</span> <i class="bx bx-chevron-down"></i></a>
+          <ul>
+            <li><a href="epreuve-E6.html">Dossier épreuve E6</a></li>
+            <li><a href="docs-projet/Tableau-de-synthese-Epreuve-E4-BTS-SIO.pdf">Tableaux de Synthèse</a></li>
+            <li><a href="../alternance/veille-technologique.html">Veille</a></li>
           </ul>
         </li>
-        <li><a href="../../index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+    
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
+    </nav>
 
       <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -171,7 +177,7 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h1 style="font-size: xx-large">ÉPREUVE E5 - Administration des systèmes et des réseaux  </h1>
+        <h1 style="font-size: xx-large">ÉPREUVE E6 - Administration des systèmes et des réseaux  </h1>
         <ol style="font-size: 20px">
           <li><a style="color:#0e2442; text-decoration: underline" href="../../index.html"><b><i class="bi bi-caret-left-fill"></i> Revenir à l'accueil</b></a></li>
           <li>ÉPREUVES</li>
@@ -211,7 +217,7 @@
         </div>
       </div>
       <div style="margin-right: 20px;margin-left: 20px" class="portfolio-description">
-        <h1 style="text-decoration: underline; text-align: center; font-size: xx-large">Présentation de l'Épreuve E5</h1>
+        <h1 style="text-decoration: underline; text-align: center; font-size: xx-large">Présentation de l'Épreuve E6</h1>
         <br>
         <h3 style="text-decoration: underline; font-size: x-large">Objectif : </h3> <br>
         <p style="text-align: justify"> <span class="alinea-text"> Cette </span> épreuve vise à évaluer chez la personne candidate
@@ -247,44 +253,71 @@
   </section>
   <!-- Fin Projet Section -->
 
-  <br><br>
+  <br>
 
-
-  <section>
-    <div class="container">
-      <link rel="stylesheet" href="../stage/css/btn-download.css">
-      <div class="section-title">
-        <h2>Documents annexes</h2>
-
-        <div class="container-btn">
-          <link rel="stylesheet" href="../stage/css/btn-download.css">
-          <a id="btn_1" class="button dark2">
-            <ul>
-              <li>Fiches de réalisations professionnelles</li>
-              <li>Téléchargement</li>
-              <li>Ouvrez le document</li>
-            </ul>
-            <div>
-              <svg viewBox="0 0 24 24"></svg>
-            </div>
-          </a>
-        </div>
-        <script>
-          document.getElementById('btn_1').addEventListener('click', function(event) {
-            event.preventDefault();
-            let downloadLink = document.createElement('a');
-            downloadLink.href = '../portfolio/docs/...html';
-            downloadLink.download = 'Fiches de réalisations professionnelles Kirian BOURLON - Épreuve E5 - BTS SIO 2024';
-            downloadLink.click();
-          });
-        </script>
-
-        <script src='../../s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
-        <script  src="../stage/js/btn-download.js"></script>
-      </div>
+<!-- ======= Réalisation Section ======= -->
+<section style="background: linear-gradient(to bottom, #bdcdd0, #ffffff);" id="projets" class="skills section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Dossier Epreuve E6💻</h2>
     </div>
-  </section>
 
+    <br>
+    <section style="border-radius: 15px; background-image: url(portfolio/img/background/background.png); background-size: 100% auto;" class="portfolio section-bg">
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+          
+          <script>
+            function redirectTo(url) {
+              window.location.href = url;
+            }
+          </script>
+
+        </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+            <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+              <img src="img/logo CheckMK.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="docs-projet/doc checkmk.pdf">
+                  <i class="bi bi-eye-fill"></i> <h6>Doc</h6>
+                <a href="docs-projet/E6_Checkmk.pdf">
+                  <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+            <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+              <img src="img/logo teampass.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="docs-projet/doc teampass.pdf">
+                  <i class="bi bi-eye-fill"></i> <h6>Doc</h6>
+                <a href="docs-projet/E6_TeamPass.pdf">
+                  <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+            <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+              <img src="img/contexte entreprise.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="docs-projet/contexte entreprise.pdf">
+                  <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!-- ======= Fin réalisation Section ======= -->
 
 
 </main>
